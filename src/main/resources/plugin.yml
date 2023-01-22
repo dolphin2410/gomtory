@@ -1,0 +1,11 @@
+main: me.dolphin2410.playerfarm.GomtoryPlugin
+version: 1.0.0
+api-version: 1.19
+author: dolphin2410
+name: Gomtory
+libraries:
+  - io.github.monun:tap-core:4.8.0
+  - io.github.monun:kommand-core:3.0.0
+  - io.github.monun:heartbeat-coroutines:0.0.4
+  - io.github.dolphin2410:mcphysics-core:0.1.2
+  - io.github.dolphin2410:mcphysics-tap:0.1.2
