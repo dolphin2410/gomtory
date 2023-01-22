@@ -49,16 +49,6 @@ class GomtoryPlugin: JavaPlugin(), Listener {
         val pp = MojangAPI.fetchSkinProfile(MojangAPI.fetchProfile("Gompowder")!!.uuid())!!.profileProperties().toSet()
 
         kommand {
-            register("gomfarm") {
-                executes {
-                    val loc = player.location.clone()
-                    HeartbeatScope().launch {
-                        fakeServer.spawnPlayer(loc,"Gompowder", pp)
-                        delay(2000)
-                    }
-                }
-            }
-
             register("gomtory") {
                 then("stop") {
                     executes {
